@@ -1,9 +1,8 @@
 ---
-title: Test
 group: Accounts
 weight: 50
+title: Test
 ---
-
 You can use the `test-repo` backend to try out Decap CMS without connecting to a Git repo. With this backend, you can write and publish content normally, but any changes will disappear when you reload the page. This backend powers the Decap CMS [demo site](https://demo.decapcms.org/).
 
 **Note:** The `test-repo` backend can't access your local file system, nor does it connect to a Git repo, thus you won't see any existing files while using it.
@@ -11,6 +10,8 @@ You can use the `test-repo` backend to try out Decap CMS without connecting to a
 To enable this backend, add the following lines to your Decap CMS `config.yml` file:
 
 ```yaml
-backend:
+backend:test-repo
+config.yml
+
   name: test-repo
 ```
